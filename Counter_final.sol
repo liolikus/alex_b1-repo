@@ -6326,41 +6326,4 @@ function awardPlayerTitle(address player, string memory title) public {
     emit PlayerTitleEarned(player, playerTitles[player][playerTitles[player].length - 1]);
 }
 
-
-
-
-// // State variables declared at contract level
-// mapping(address => string[]) private playerTitles;
-// mapping(address => uint256) private titleCount;
-// address[] private specialTitleHolders;
-
-// // Event declaration
-// event PlayerTitleEarned(address indexed player, string title);
-
-// function awardPlayerTitle(address player, string memory title) public {
-//     // Store the title in the mapping
-//     playerTitles[player].push(title);
-    
-//     // Update the counter
-//     titleCount[player] += 1;
-    
-//     // Check if this is a special achievement
-//     bool isSpecialTitle = keccak256(bytes(title)) == keccak256(bytes("Champion")) ||
-//                          keccak256(bytes(title)) == keccak256(bytes("Legend"));
-    
-//     // Apply any special effects for certain titles
-//     if (isSpecialTitle) {
-//         specialTitleHolders.push(player);
-//     }
-    
-//     // Emit the event
-//     emit PlayerTitleEarned(player, title);
-// }
-
-
-
-
-
-
-
 }
